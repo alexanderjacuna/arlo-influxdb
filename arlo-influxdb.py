@@ -28,7 +28,7 @@ if cam <> 0:
 		brightness = arlo.cameras[i].brightness
 		battery_level = arlo.cameras[i].battery_level
 		signal_strength = arlo.cameras[i].signal_strength
-		measurement = "jupitor-" + model_id + "-" + serial_number
+		measurement = "base_station-" + model_id + "-" + serial_number
 		
 		data = [
 		{
