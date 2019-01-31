@@ -25,6 +25,7 @@ if cam <> 0:
 	for i in range(cam):
 		model_id = arlo.cameras[i].model_id
 		serial_number = arlo.cameras[i].serial_number
+		brightness = arlo.cameras[i].brightness
 		battery_level = arlo.cameras[i].battery_level
 		signal_strength = arlo.cameras[i].signal_strength
 		measurement = "jupitor-" + model_id + "-" + serial_number
@@ -34,7 +35,8 @@ if cam <> 0:
 		  "measurement": measurement,
 			  "fields": {
 				  "battery_level" : battery_level ,
-				  "signal_strength" : signal_strength
+				  "signal_strength" : signal_strength ,
+				  "brightness" : brightness
 			  }
 		  } 
 		]
